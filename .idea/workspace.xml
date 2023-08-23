@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a53ddc5-a2de-48e0-af17-b6f859e00bb0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/objectpage/BrowserStackHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/objectpage/BrowserStackHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/objectpage/BrowserStackSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/objectpage/BrowserStackSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/objectpage/BrowserStackSignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/objectpage/BrowserStackSignUpPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +19,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2ULMLbR3zjgYan2W0VpXQR1rFau" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -28,11 +32,48 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowWeb Inspector.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Julio_Morales/AquaProjects/ObjectPage/src/test/java/com/example/objectpage",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Julio_Morales\AquaProjects\ObjectPage\src\test\java\com\example\objectpage" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BrowserStackSetup" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ObjectPage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.objectpage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.objectpage" />
+      <option name="MAIN_CLASS_NAME" value="com.example.objectpage.BrowserStackSetup" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.BrowserStackSetup" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,8 +82,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692714354525</updated>
-      <workItem from="1692714355537" duration="1000" />
+      <workItem from="1692714355537" duration="2068000" />
+      <workItem from="1692720060937" duration="4042000" />
+      <workItem from="1692777838371" duration="10251000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

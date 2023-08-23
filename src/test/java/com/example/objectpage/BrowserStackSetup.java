@@ -1,6 +1,5 @@
-package com.example.amazoncom;
+package com.example.objectpage;
 
-import browserStackPages.BrowserStackHomePage;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,28 +11,31 @@ public class BrowserStackSetup {
   WebDriver driver;
   BrowserStackHomePage objBrowserStackHomePage;
   BrowserStackSignUpPage objBrowserStackSignUpPage;
-
   @BeforeTest
   public void setup() {
-    System.setProperty("webdriver.chrome.driver", "C:\\BrowserStack\\chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver", "C:\\Users\\Julio_Morales\\chromedriver\\chromedriver.exe");
     driver = new ChromeDriver();
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    driver.get("https://www.browserstack.com/");
+    driver.get("https://www.amazon.es/");
   }
 
   @Test(priority = 1)
   public void navigate_to_homepage_click_on_getstarted() {
     objBrowserStackHomePage = new BrowserStackHomePage(driver);
-    objBrowserStackHomePage.veryHeader();
-    objBrowserStackHomePage.clickOnGetStarted();
+    objBrowserStackHomePage.veryStringOffer();
+   objBrowserStackHomePage.clickOnGetOffer();
   }
 
   @Test(priority = 2)
   public void enter_userDetails() {
     objBrowserStackSignUpPage = new BrowserStackSignUpPage(driver);
-    objBrowserStackSignUpPage.veryHeader();
-    objBrowserStackSignUpPage.enterFullName("TestUser");
-    objBrowserStackSignUpPage.enterBusinessEmail("TestUser@gmail.com");
-    objBrowserStackSignUpPage.enterPasswrod("TestUserPassword");
+    objBrowserStackHomePage.veryStringOffer();
+    objBrowserStackSignUpPage.clickOnlinkLogging();
+   // objBrowserStackSignUpPage.enterFullName("julio_morales@epam.com");
+    objBrowserStackSignUpPage.enterBusinessEmail("julio_morales@epam.com");
+    objBrowserStackSignUpPage.clickOnbuttonToLogging1();
+    objBrowserStackSignUpPage.enterPasswrod("epamamazon123");
+    objBrowserStackSignUpPage.clickOnbuttonEntrance();
+       /**/
   }
 }
