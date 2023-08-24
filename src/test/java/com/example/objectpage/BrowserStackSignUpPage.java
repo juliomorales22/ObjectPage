@@ -9,10 +9,8 @@ import static org.assertj.core.api.Assertions.*;
 
 public class BrowserStackSignUpPage {
   WebDriver driver;
-
   @FindBy(xpath = "//a[contains(@data-nav-role,'signin')]")
   WebElement signInLink;
-
   @FindBy(xpath = "//*[@id='ap_email']")
   WebElement businessEmail;
   @FindBy(xpath = " //input[@id=\"continue\"]")
@@ -23,15 +21,12 @@ public class BrowserStackSignUpPage {
   WebElement password;
   @FindBy(xpath = "//span[contains(@id,'nav-link')]")
   WebElement textIamInside;
-
   public BrowserStackSignUpPage(WebDriver driver) {
     this.driver = driver;
     PageFactory.initElements(driver, this);
   }
-
   public void textIamInside() {
     String gettextIamInsideString = textIamInside.getText().trim();
-   // Assertions.assertEquals("Hola Julio",  gettextIamInsideString);
     assertThat(  gettextIamInsideString).isNotEmpty().contains("Hola Julio") ;//"Hola Julio",
 
   }

@@ -18,25 +18,21 @@ public class BrowserStackSetup {
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     driver.get("https://www.amazon.es/");
   }
-
   @Test(priority = 1)
   public void navigate_to_homepage_click_on_getstarted() {
     objBrowserStackHomePage = new BrowserStackHomePage(driver);
     objBrowserStackHomePage.veryStringOffer();
    objBrowserStackHomePage.clickOnGetOffer();
   }
-
   @Test(priority = 2)
   public void enter_userDetails() {
     objBrowserStackSignUpPage = new BrowserStackSignUpPage(driver);
     objBrowserStackHomePage.veryStringOffer();
     objBrowserStackSignUpPage.clickOnlinkLogging();
-   // objBrowserStackSignUpPage.enterFullName("julio_morales@epam.com");
     objBrowserStackSignUpPage.enterBusinessEmail("julio_morales@epam.com");
     objBrowserStackSignUpPage.clickOnbuttonToLogging1();
     objBrowserStackSignUpPage.enterPasswrod("epamamazon123");
     objBrowserStackSignUpPage.clickOnbuttonEntrance();
     objBrowserStackSignUpPage.textIamInside();
-    /**/
   }
 }
