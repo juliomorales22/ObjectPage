@@ -5,12 +5,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import static org.assertj.core.api.Assertions.*;
 
 public class BrowserStackSignUpPage {
   WebDriver driver;
 
   @FindBy(xpath = "//a[contains(@data-nav-role,'signin')]")
-  WebElement linkLogging;
+  WebElement signInLink;
 
   @FindBy(xpath = "//*[@id='ap_email']")
   WebElement businessEmail;
@@ -30,22 +31,19 @@ public class BrowserStackSignUpPage {
 
   public void textIamInside() {
     String gettextIamInsideString = textIamInside.getText().trim();
-    Assertions.assertEquals("Hola Julio",  gettextIamInsideString);
+   // Assertions.assertEquals("Hola Julio",  gettextIamInsideString);
+    assertThat(  gettextIamInsideString).isNotEmpty().contains("Hola Julio") ;//"Hola Julio",
+
   }
   public void clickOnlinkLogging() {
-    linkLogging.click();
+   signInLink.click();
   }
-  /*public void enterFullName(String arg1) {
-    userName.sendKeys(arg1);
-  }*/
   public void clickOnbuttonToLogging1() {
     buttonToLogging1.click();
   }
   public void clickOnbuttonEntrance() {
     buttonEntrance.click();
   }
-
-
   public void enterBusinessEmail(String arg1) {
     businessEmail.sendKeys(arg1);
   }

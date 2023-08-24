@@ -36,6 +36,7 @@ public class BrowserStackSetup {
     objBrowserStackSignUpPage.clickOnbuttonToLogging1();
     objBrowserStackSignUpPage.enterPasswrod("epamamazon123");
     objBrowserStackSignUpPage.clickOnbuttonEntrance();
-       /**/
+    objBrowserStackSignUpPage.textIamInside();
+    /**/
   }
 }
